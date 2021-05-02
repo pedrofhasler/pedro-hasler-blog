@@ -1,0 +1,18 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<div class="main-container">
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{form|crispy}}
+        <p>Certeza que deseja excluir {{item}}?</p>
+        <input class="btn btn-danger" type="submit" value="Confirm">
+    </form>
+</div>
+
+{% endblock content %}

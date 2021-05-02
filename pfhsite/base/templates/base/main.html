@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Pedro Hasler</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Preloading the css variable files to prevent the delay in changing theme when the site is first loaded -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/purple.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/green.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/blue.css' %}">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
+</head>
+<body>
+
+    {% include 'base/navbar.html' %}
+
+    {% block content %}
+    <!-- Content goes here-->
+    {% endblock content %}
+</body>    
+</html>
