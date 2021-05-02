@@ -1,2 +1,4 @@
 # pedro-hasler-blog
-Site for posting about my projects
+This is the source code of my website, builded to post about my projects.
+http://pedrohasler.herokuapp.com
+- Made with Django/Python
